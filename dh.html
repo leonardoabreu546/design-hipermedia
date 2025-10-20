@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card bordervermelho">
+            <h3> titulo </h3>
+            <p> Lorem ipsum dolor sit amet consectetur dsdwfef  fefdfdfefffffffd fdfdfefefdfdssss</p>
+            <img src="" alt="img">
+        </div>
+        <div class="card borderciano">
+            <h3> titulo </h3>
+            <p> Lorem ipsum dolor sit amet consectetur dsdwfef  fefdfdfefffffffd fdfdfefefdfdssss</p>
+            <img src="" alt="img">
+        </div>
+        <div class="card borderamarelo">
+            <h3> titulo </h3>
+            <p> Lorem ipsum dolor sit amet consectetur dsdwfef  fefdfdfefffffffd fdfdfefefdfdssss</p>
+            <img src="" alt="img">
+        </div>
+        <div class="card borderazul">
+            <h3> titulo </h3>
+            <p> Lorem ipsum dolor sit amet consectetur dsdwfef  fefdfdfefffffffd fdfdfefefdfdssss</p>
+            <img src="" alt="img">
+        </div>
+    <div class="container"></div>
+            <style>
+                .container {
+                    background-color: grey;
+                    /* height: 200vh; */
+                    display:grid;     
+                    grid-template-areas: 
+                                        ". card2 ."
+                                        "card1 card2 card4"
+                                        "card1 card3 card4"
+                                        ". card3 .";
+                    align-content: center;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 20px;
+                    
+
+                }
+                .card {
+                    background-color: white;
+                    width: 250px;
+                    height: 150px;
+                    margin: auto;
+                    padding: 15px;
+                    border-top: 5px solid red;
+                    border-radius: 15px;
+                }
+                .bordervermelho{
+                    border-top: 5px solid red;
+                    grid-area: card1;
+                }
+                .borderciano{
+                    border-top: 5px solid cyan;
+                    grid-area: card2;
+                }
+                .borderazul{
+                    border-top: 5px solid darkblue;
+                    grid-area: card3;
+                }
+                .borderamarelo{
+                    border-top:5px solid yellow;
+                    grid-area: card4;
+                }
+                /* @media (min-width: 360px) {
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+                } */
+            </style>
+</body>
+
+</html>
