@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9. Card</title>
+  <style>
+    .container {
+      background-color: gray;
+      height: 100vh;
+      display: grid;
+      align-content: center;
+      grid-template-areas:
+        ". card1 ."
+        "card3 card1 card4"
+        "card3 card2 card4"
+        ". card2 .";
+    }
+
+    .card {
+      background-color: white;
+      width: 350px;
+      height: 250px;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px black;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: justify;
+    }
+
+    .bordervermelho {
+      border-top: 5px solid red;
+      grid-area: card1;
+    }
+
+    .borderciano {
+      border-top: 5px solid #00b67f;
+      grid-area: card3;
+    }
+
+    .borderlaranja {
+      border-top: 5px solid orange;
+      grid-area: card2;
+    }
+
+    .borderazul {
+      border-top: 5px solid #0C687F;
+      grid-area: card4;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      align-self: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card bordervermelho">
+      <h1>Team Builder</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <img src="adad" alt="dadada">
+    </div>
+
+    <div class="card borderciano">
+      <h2>Supervisor</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <img src="banana" alt="banana">
+    </div>
+
+    <div class="card borderlaranja">
+      <h3>Karma</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <img src="arroz" alt="arroz">
+    </div>
+
+    <div class="card borderazul">
+      <h4>Calculator</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <img src="massa" alt="massa">
+    </div>
+  </div>
+</body>
+</html>

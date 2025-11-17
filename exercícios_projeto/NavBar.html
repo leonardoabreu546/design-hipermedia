@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    .navbar {
+      background-color: lightblue;
+      padding: 10px 20px;
+    }
+
+    .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .navbar-nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-link {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #0077cc;
+    }
+
+    .nav-link.disabled {
+      color: #999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled">Disabled</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

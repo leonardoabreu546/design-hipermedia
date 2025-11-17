@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10. Dropdown</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+    }
+
+    #anchor {
+      padding: 8px 14px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #anchor:hover {
+      background-color: #0056b3;
+    }
+
+    ul[popover] {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      min-width: 150px;
+    }
+
+    #target li {
+      border-bottom: 1px solid #eee;
+    }
+
+    #target li:last-child {
+      border-bottom: none;
+    }
+
+    #target li a {
+      display: block;
+      padding: 10px 14px;
+      color: #212529;
+      text-decoration: none;
+    }
+
+    #target li a:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dropdown</h1>
+  <nav>
+    <button id="anchor" popovertarget="target" popovertargetaction="toggle">
+      Toggle Dropdown ▾
+    </button>
+    <ul id="target" popover>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

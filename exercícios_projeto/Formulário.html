@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 20px;
+      }
+
+      form {
+        max-width: 400px;
+      }
+
+      .form-label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      .form-control,
+      .form-select {
+        display: block;
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-check {
+        margin-top: 10px;
+      }
+
+      .form-check-input {
+        margin-right: 6px;
+      }
+    </style>
+    <form>
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" />
+
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" />
+
+      <label for="inputAddress" class="form-label">Endereço</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputAddress"
+        placeholder="Rua da Pinheira, São Gonçalo, 9060 Funchal"
+      />
+      <label for="inputCidade" class="form-label">Cidade</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputCidade"
+        placeholder="Funchal"
+      />
+
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Escolha o estado</option>
+        <option>...</option>
+      </select>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" />
+        <label class="form-check-label" for="gridCheck">
+          Confira o meu perfil
+        </label>
+      </div>
+    </form>
+  </body>
+</html>

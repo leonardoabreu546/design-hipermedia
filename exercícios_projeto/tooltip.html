@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltip com Popover</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      color: #003366;
+      margin: 20px;
+    }
+
+    .forma {
+      padding-left: .75rem;
+      clip-path: polygon(
+        100% 0%,
+        100% 100%,
+        5px 100%,
+        5px calc(50% + 5px),
+        0% 50%,
+        5px calc(50% - 5px),
+        5px 0%
+      );
+    }
+
+    #info-opener {
+      anchor-name: --info-opener;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #info-opener:hover {
+      background-color: #005fa3;
+    }
+
+    .info-tooltip[popover] {
+      background: #007bff;
+      padding: 5px 10px;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+    }
+
+    #info {
+      margin: 0;
+      position: absolute;
+      position-anchor: --info-opener;
+      position-area: right;
+      position-try-fallbacks: left;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tooltip com Popover</h2>
+  <button id="info-opener" popovertarget="info" class="info-icon">
+    ℹ️ Informação
+  </button>
+  <div id="info" popover class="info-tooltip forma">
+    Texto do tooltip com popover.
+  </div>
+</body>
+</html>
