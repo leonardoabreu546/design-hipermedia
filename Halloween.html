@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <style>
+        body {
+            background-color: #262b64;
+            
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            justify-content: center;
+            padding-top: 20px;
+            
+        }
+        .esquerdo {
+            display: flex;
+            flex-direction: column;
+            width: 310px;
+        }
+        .direito {
+            width: 500px;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+        }    
+        .imagem {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .login {
+            height: 100px;
+        }
+        .grande {
+          background-color: white;
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          padding: 10px;
+          text-shadow : 0px 1px black;
+
+        }
+        .medio1 {
+          display: flex;
+          flex-direction: column;        
+          padding: 10px;
+          color: rgb(29 78 216);
+          align-items: center;
+          font-size: 17px;
+          font-weight: bold;
+        }
+        .imagem.login {
+          height: 90px
+        }
+        .login {
+          align-items: center;
+          justify-content: center;
+        }
+        .autor {
+          font-size: 12px;
+        }
+        .frase {
+          font-size: 15px;
+          font-weight: bold;  
+          max-width: 250px
+        }
+        .medio2 {
+          display: flex;
+          flex-direction: column;        
+          padding: 10px;
+          justify-content: center;
+        }
+        
+    </style>
+    <div class="container">
+        <div class="esquerdo">
+            <img src="https://images.pexels.com/photos/619423/pexels-photo-619423.jpeg?auto=compress&cs=tinysrgb&w=600" class="imagem" alt="Placeholder Image">
+            <h1>Design Hipermédia: CSS Halloween </h1>
+            <img src="https://media.istockphoto.com/id/175195916/photo/halloween-casino-witch-with-smoking-pipe-and-pumpkins.jpg?s=612x612&w=is&k=20&c=vlH2OV6tCuh_h2IwvP0GHks41uKbhBlzucZNhUkiuCA=" class="imagem" alt="Bats Image">
+        </div>
+        <div class="direito">
+            <div class="abobora1">   
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Pumpkins_with_candles_%28Unsplash%29.jpg/1599px-Pumpkins_with_candles_%28Unsplash%29.jpg?20170818192652" class="imagem" alt="Pumpkin Image">
+                <div class="grande">
+                  <div class="medio1">
+                    <div>
+                      31
+                    </div>
+                    <div>
+                      Out
+                    </div>
+                  </div>
+
+                  <div class="medio2">
+                    <div class="frase">
+                      OS MELHORES WEBSITES DE HALLOWEEN
+                    </div>
+                    <div class="autor">
+                      Por Marco Olim
+                    </div>
+                  </div>
+                </div>
+            </div> 
+            <div>
+            <div class="login" style="position: relative;">
+              <img src="https://media.istockphoto.com/id/1174282589/photo/halloween-jack-o-lantern-bucket-filled-with-candy-isolated-on-white.jpg?s=612x612&w=0&k=20&c=tuvcuOM1xD8Pfj9yLl9mjYqyssOxr_bqjuTZwykE-CE=" 
+                class="imagem login" 
+                alt="Halloween Image">
+                 <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:rgb(0, 0, 0); font-weight:bold; text-shadow:2px 2px 5px black;">
+                  LOGIN
+                 </div>
+    </div>
+</body>
+</html>
